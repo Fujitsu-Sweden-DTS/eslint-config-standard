@@ -1,0 +1,30 @@
+{
+  "name": "@fujitsusweden/eslint-config-standard",
+  "version": "0.1.0",
+  "description": "Shareable ESLint config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fujitsu-Sweden-DTS/eslint-config-standard.git"
+  },
+  "author": {
+    "name": "Axel Svensson",
+    "email": "mail@axelsvensson.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fujitsu-Sweden-DTS/eslint-config-standard/issues"
+  },
+  "homepage": "https://github.com/Fujitsu-Sweden-DTS/eslint-config-standard#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "7.23.0",
+    "jest": "26.6.3"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "^<rootDir>/.nvm/"
+    ]
+  }
+}
