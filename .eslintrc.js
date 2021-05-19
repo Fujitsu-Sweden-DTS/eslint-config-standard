@@ -5,10 +5,7 @@ module.exports = {
     commonjs: true,
     es2021: true,
   },
-  extends: ['.'],
-  parserOptions: {
-    ecmaVersion: 12,
-  },
-  rules: {
-  },
+  extends: ["."],
+  parserOptions: { ecmaVersion: 12 },
+  rules: {},
 };

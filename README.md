@@ -6,8 +6,12 @@ A shareable ESLint config.
 
 ## How to use it
 
-* To install: Run `npm install --save-dev eslint @fujitsusweden/eslint-config-standard`
-* To initialize: Run `npx eslint --init` then in your generated `.eslintrc.js` file, change `extends: "eslint:recommended"` to `extends: "@fujitsusweden/standard"`
+* To install it into your project:
+  * Run `npm install --save-dev eslint @fujitsusweden/eslint-config-standard`
+  * Run `npx eslint --init`
+    * On the question `How would you like to use ESLint?`, answer `To check syntax and find problems`.
+    * Answer other questions as appropriate.
+  * In your generated `.eslintrc.js` file, change `extends: "eslint:recommended"` to `extends: "@fujitsusweden/standard"`
 * To check for problems, run `npx eslint .`
 * To check for problems and also let ESLint fix everything it can, run `npx eslint . --fix`
 
