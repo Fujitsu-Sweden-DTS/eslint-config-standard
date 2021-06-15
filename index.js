@@ -213,7 +213,7 @@ module.exports = {
     "template-curly-spacing": ["error", "never"],
     "template-tag-spacing": "error",
     "unicode-bom": ["error", "never"],
-    "vars-on-top": "error",
+    "vars-on-top": "off", // Redundant since we use "no-var".
     "wrap-iife": "error",
     "wrap-regex": "error",
     "yield-star-spacing": "error",
