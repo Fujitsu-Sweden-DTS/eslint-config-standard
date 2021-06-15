@@ -106,7 +106,7 @@ module.exports = {
     "no-lonely-if": "error",
     "no-loop-func": "error",
     "no-loss-of-precision": "error",
-    "no-magic-numbers": ["error", { ignore: [-1, 0, 1], ignoreArrayIndexes: true }],
+    "no-magic-numbers": ["error", { ignore: [-1, 0, 1, 2, 100], ignoreArrayIndexes: true }],
     "no-mixed-operators": "off",
     "no-multi-assign": "error",
     "no-multi-spaces": "error",
