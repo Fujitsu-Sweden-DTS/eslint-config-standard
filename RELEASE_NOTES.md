@@ -19,3 +19,7 @@ Activate more rules
 - Allow 4 parameters
 - Turn off vars-on-top
 - Allow magic numbers 2 and 100
+
+## v0.4.0
+
+Fix
