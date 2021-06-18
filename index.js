@@ -1,5 +1,9 @@
 "use strict";
-const indent_size = 2;
+const ACCEPTABLE_MAGIC_NUMBERS = [-1, 0, 1, 2, 100];
+const COMPLEXITY = 25;
+const INDENT_SIZE = 2;
+const MAX_LEN = 200;
+const MAX_PARAMS = 4;
 module.exports = {
   extends: "eslint:recommended",
   rules: {
@@ -20,7 +24,7 @@ module.exports = {
     "comma-dangle": ["error", "always-multiline"],
     "comma-spacing": "error",
     "comma-style": ["error", "last"],
-    complexity: "error",
+    complexity: ["error", COMPLEXITY],
     "computed-property-spacing": ["error", "never"],
     "consistent-return": "error",
     "consistent-this": "error",
@@ -46,7 +50,7 @@ module.exports = {
     "id-length": "off",
     "id-match": "error",
     "implicit-arrow-linebreak": "off",
-    indent: ["error", indent_size, { SwitchCase: 1 }],
+    indent: ["error", INDENT_SIZE, { SwitchCase: 1 }],
     "init-declarations": "error",
     "jsx-quotes": "error",
     "key-spacing": "error",
@@ -57,11 +61,11 @@ module.exports = {
     "lines-between-class-members": ["error", "always"],
     "max-classes-per-file": "error",
     "max-depth": "off",
-    "max-len": ["warn", { code: 200, ignoreStrings: true }],
+    "max-len": ["warn", { code: MAX_LEN, ignoreStrings: true }],
     "max-lines": "off",
     "max-lines-per-function": "off",
     "max-nested-callbacks": "error",
-    "max-params": "error",
+    "max-params": ["error", MAX_PARAMS],
     "max-statements": "off",
     "max-statements-per-line": "error",
     "multiline-comment-style": ["error", "separate-lines"],
@@ -106,7 +110,7 @@ module.exports = {
     "no-lonely-if": "error",
     "no-loop-func": "error",
     "no-loss-of-precision": "error",
-    "no-magic-numbers": ["error", { ignore: [-1, 0, 1], ignoreArrayIndexes: true }],
+    "no-magic-numbers": ["error", { ignore: ACCEPTABLE_MAGIC_NUMBERS, ignoreArrayIndexes: false }],
     "no-mixed-operators": "off",
     "no-multi-assign": "error",
     "no-multi-spaces": "error",
@@ -213,7 +217,7 @@ module.exports = {
     "template-curly-spacing": ["error", "never"],
     "template-tag-spacing": "error",
     "unicode-bom": ["error", "never"],
-    "vars-on-top": "error",
+    "vars-on-top": "off", // Redundant since we use "no-var".
     "wrap-iife": "error",
     "wrap-regex": "error",
     "yield-star-spacing": "error",
