@@ -26,7 +26,7 @@ run-tests() {
 }
 
 eslint-fix() {
-    npx eslint . --fix
+    npx eslint . --fix "$@"
 }
 
 die() {
